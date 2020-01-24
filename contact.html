@@ -30,21 +30,21 @@
              <span class="text-primary">Contact</span> Us
          </h1>
          <p>Please fill up form below to contact</p>
-         <form action="process.php">
-             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-             </div>
-             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-             </div>
-             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea type="text" id="message" name="message"></textarea>
-             </div>
-             <button type="submit" class="btn">SUBMIT</button>
-         </form>
+         <form name="contact"  method="POST" data-netlify="true">
+            <div class="form-group">
+               <label for="name">Name</label>
+               <input type="text" id="name" name='name' placeholder="Enter name">
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input  name="email" type="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea  name= "info" type="text" id="message"  placeholder="Brief Description about ur Idea..." name="message"></textarea>
+            </div>
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
      </div>
  </section>
  
